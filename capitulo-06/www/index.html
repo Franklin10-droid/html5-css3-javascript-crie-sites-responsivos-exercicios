@@ -65,6 +65,8 @@
 				<input type="range" class="form-control" name="volume" id="volume" min="0" max="100" value="50">
 			</div>
 
+			<input type="button" id="btn-volume" value="Qual o volume?">
+
 			<div class="form-group">
 				<label for="busca">Busca:</label>
 				<input type="search" class="form-control" name="busca" id="busca" placeholder="Pesquisar..." required>
@@ -98,11 +100,37 @@
 				</div>
 			</div>
 
-			<input type="button" value="Botão">
 			<input type="reset" value="Limpar">
 			<input type="submit" value="Enviar">
 
 		</form>
+
+		<script>
+		var cor = document.getElementById("cor");
+
+		cor.onchange = function(){
+
+			var labels = document.querySelectorAll("label");
+
+			for (var i = 0; i < labels.length; i++) {
+				
+				var label = labels[i];
+
+				label.style.color = cor.value;
+
+			};
+
+		};
+
+		var botao = document.getElementById("btn-volume");
+		var volume = document.getElementById("volume");
+
+		botao.onclick = function(){
+
+			alert("O volume atual é: "+volume.value);
+
+		};		
+		</script>
 
 	</body>
 </html>
