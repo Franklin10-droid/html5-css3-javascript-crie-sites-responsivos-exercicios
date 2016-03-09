@@ -1,0 +1,91 @@
+/* Fontes */
+@font-face {
+ font-family: EnglishTowne;
+ src: url("../fonts/EnglishTowne.eot");
+}
+@font-face {
+ font-family: EnglishTowne;
+ src: url("../fonts/EnglishTowne.ttf");
+}
+@font-face {
+ font-family: Kingthings_Trypewriter;
+ src: url("../fonts/Kingthings_Trypewriter_2.eot");
+}
+@font-face {
+ font-family: Kingthings_Trypewriter;
+ src: url("../fonts/Kingthings_Trypewriter_2.ttf");
+}
+/* Estilos */
+body {
+	font-family: "Kingthings_Trypewriter";
+	font-size: 14px;
+}
+h1, h2 {
+	text-align: center;
+}
+h1 {
+	font-family: "EnglishTowne";
+	font-size: 128px;
+	margin: 0;
+}
+h2 {
+	border: #000 2px solid;
+	border-left: none;
+	border-right: none;
+	padding: 8px 0;
+	text-transform: uppercase;
+}
+h3 {
+	font-size: 36px;
+	margin: 20px 0 ;
+}
+p {
+	text-align: justify;
+	margin: 10px;
+}
+.big-letter::first-letter {
+  font-weight: bold;
+  font-size: 48px;
+  float: left;
+  margin-right: 8px;
+}
+q {
+	font-size: 22px;
+    float: left;
+    width: 300px;
+    margin: 10px;
+    font-style: italic;
+    border-top: #000 2px solid;
+    border-bottom: #000 2px solid;
+    padding: 10px;
+}
+.width-50 {
+	width: 50%;
+	float: left;
+}
+.col-2 p {
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+img {
+	max-width: 50%;
+	height: 128px;
+	float: right;
+}
+audio {
+	display: block;
+	width: 100%;
+}
+.gallery {
+	list-style: none;
+}
+.gallery li {
+	display: inline-block;
+	width: 30%;
+	margin: 1%;
+}
+.gallery li img {
+	width: 100%;
+	max-width: 100%;
+}
