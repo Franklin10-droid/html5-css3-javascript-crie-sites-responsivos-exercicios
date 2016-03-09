@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Formulário</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="styles/default.css">
+	</head>
+	<body>
+
+		<form action="" method="POST">
+			
+			<div class="form-group">
+				<label for="nome">Nome:</label>
+				<input type="text" class="form-control" name="nome" id="nome" placeholder="Digite o nome...">
+			</div>
+
+			<div class="form-group">
+				<label for="idade">idade:</label>
+				<input type="number" class="form-control" name="idade" id="idade" max="99" min="18" step="2">
+			</div>
+
+			<div class="form-group">
+				<label for="email">E-mail:</label>
+				<input type="text" class="form-control" name="email" id="email" placeholder="usuário@dominio.com.br">
+			</div>
+
+			<div class="form-group">
+				<label for="telefone">Telefone:</label>
+				<input type="tel" class="form-control" name="telefone" id="telefone" pattern='[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}' placeholder="+55(11)1234-5678">
+			</div>
+
+			<div class="form-group">
+				<label for="senha">Senha:</label>
+				<input type="password" class="form-control" name="senha" id="senha" placeholder="Escolha uma senha...">
+			</div>
+
+			<div class="form-group">
+				<label for="nascimento">Nascimento:</label>
+				<input type="date" class="form-control" name="nascimento" id="nascimento" max="2000-01-01">
+			</div>
+
+			<div class="form-group">
+				<label for="mes">Mês:</label>
+				<input type="month" class="form-control" name="mes" id="mes">
+			</div>
+
+			<div class="form-group">
+				<label for="semana">Semana:</label>
+				<input type="week" class="form-control" name="semana" id="semana">
+			</div>
+
+			<div class="form-group">
+				<label for="hora">Hora:</label>
+				<input type="time" class="form-control" name="hora" id="hora">
+			</div>
+
+			<div class="form-group">
+				<label for="cor">Cor:</label>
+				<input type="color" class="form-control" name="cor" id="cor">
+			</div>
+
+			<div class="form-group">
+				<label for="volume">Volume:</label>
+				<input type="range" class="form-control" name="volume" id="volume" min="0" max="100" value="50">
+			</div>
+
+			<div class="form-group">
+				<label for="busca">Busca:</label>
+				<input type="search" class="form-control" name="busca" id="busca" placeholder="Pesquisar..." required>
+			</div>
+
+			<div class="form-group">
+				<label for="site">Site:</label>
+				<input type="url" class="form-control" name="site" id="site" placeholder="http://www.hcode.com.br" required>
+			</div>
+
+			<div class="form-group">
+				<label for="sexo">Sexo:</label>
+				<div class="radio"> 
+					<label> 
+						<input type="radio" class="form-control" name="sexo" value="M" checked="checked"> Masculino 
+					</label> 
+				</div>
+				<div class="radio"> 
+					<label> 
+						<input type="radio" class="form-control" name="sexo" value="F"> Feminino 
+					</label> 
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="contrato">Contrato:</label>
+				<div class="checkbox"> 
+					<label> 
+						<input type="checkbox" class="form-control" name="contrato"> Li e aceito 
+					</label>
+				</div>
+			</div>
+
+			<input type="button" value="Botão">
+			<input type="reset" value="Limpar">
+			<input type="submit" value="Enviar">
+
+		</form>
+
+	</body>
+</html>
